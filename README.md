@@ -29,18 +29,41 @@ ycsb-users@yahoogroups.com
 Getting Started
 ---------------
 
-1. Download the [latest release of YCSB](https://github.com/brianfrankcooper/YCSB/releases/latest):
+1. Download [YCSB](https://github.com/madtomy/YCSB):
 
-    ```sh
-    curl -O --location https://github.com/brianfrankcooper/YCSB/releases/download/0.15.0/ycsb-0.15.0.tar.gz
-    tar xfvz ycsb-0.15.0.tar.gz
-    cd ycsb-0.15.0
+    ```
+    git clone https://github.com/madtomy/YCSB
     ```
     
 2. Set up a database to benchmark. There is a README file under each binding 
    directory.
 
-3. Run YCSB command. 
+Building from source
+--------------------
+
+YCSB requires the use of Maven 3; if you use Maven 2, you may see [errors
+such as these](https://github.com/brianfrankcooper/YCSB/issues/406).
+
+YCSB requires the use of JDK and not JRE on Windows.
+
+On windows, Make sure to add JDK as `JAVA_HOME`, 
+and the maven, and jdk paths to the `Path` variable 
+in your System variables
+
+To build the cloudspanner database binding:
+
+    mvn -pl com.yahoo.ycsb:cloudspanner-binding -am clean package
+
+To build the dynamodb database binding:
+
+    mvn -pl com.yahoo.ycsb:dynamodb-binding -am clean package
+
+To build Both dynamodb and cloudspanner:
+   
+    mvn clean package
+
+
+4. Run YCSB command. 
 
     On Linux:
     ```sh
@@ -50,8 +73,8 @@ Getting Started
 
     On Windows:
     ```bat
-    bin/ycsb.bat load basic -P workloads\workloada
-    bin/ycsb.bat run basic -P workloads\workloada
+    bin\ycsb.bat load basic -P workloads\workloada
+    bin\ycsb.bat run basic -P workloads\workloada
     ```
 
   Running the `ycsb` command without any argument will print the usage. 
@@ -62,16 +85,3 @@ Getting Started
   See https://github.com/brianfrankcooper/YCSB/wiki/Core-Properties for 
   the list of available workload properties.
 
-Building from source
---------------------
-
-YCSB requires the use of Maven 3; if you use Maven 2, you may see [errors
-such as these](https://github.com/brianfrankcooper/YCSB/issues/406).
-
-To build the full distribution, with all database bindings:
-
-    mvn clean package
-
-To build a single database binding:
-
-    mvn -pl com.yahoo.ycsb:mongodb-binding -am clean package
