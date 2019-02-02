@@ -3,8 +3,8 @@ DBaaS: A Comparison and Analysis of Cloud Spanner and DynamoDB Performances
 
 Requirements:
 ------------------
-  Java 1.7+  
-  Maven3
+### Java 1.7+  
+###  Maven3
  
 
 Getting Started
