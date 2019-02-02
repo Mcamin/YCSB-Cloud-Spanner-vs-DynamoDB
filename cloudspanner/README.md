@@ -1,25 +1,7 @@
-<!--
-Copyright (c) 2017 YCSB contributors. All rights reserved.
+## Quick Start
 
-Licensed under the Apache License, Version 2.0 (the "License"); you
-may not use this file except in compliance with the License. You
-may obtain a copy of the License at
+This section describes how to run YCSB on CouchDB.
 
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
-implied. See the License for the specific language governing
-permissions and limitations under the License. See accompanying
-LICENSE file.
--->
-
-# Cloud Spanner Driver for YCSB
-
-This driver provides a YCSB workload binding for Google's Cloud Spanner database, the first relational database service that is both strongly consistent and horizontally scalable. This binding is implemented using the official Java client library for Cloud Spanner which uses GRPC for making calls.
-
-For best results, we strongly recommend running the benchmark from a Google Compute Engine (GCE) VM.
 
 ## Running a Workload
 

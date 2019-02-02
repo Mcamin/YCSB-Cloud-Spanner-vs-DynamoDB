@@ -63,7 +63,7 @@ public class DynamoDBClient extends DB {
   private String hashKeyName;
 
   private boolean consistentRead = false;
-  private String endpoint = "http://dynamodb.us-east-1.amazonaws.com";
+  private String endpoint = "http://dynamodb.eu-west-1.amazonaws.com";
   private int maxConnects = 50;
   private static final Logger LOGGER = Logger.getLogger(DynamoDBClient.class);
   private static final Status CLIENT_ERROR = new Status("CLIENT_ERROR", "An error occurred on the client.");
