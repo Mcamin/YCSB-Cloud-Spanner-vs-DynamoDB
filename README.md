@@ -1,4 +1,4 @@
-DynamoDB service vs CloudSpanner Benchmark (YCSB)
+DBaaS: A Comparison and Analysis of Cloud Spanner and DynamoDB Performances
 ====================================
 
 Requirements:
