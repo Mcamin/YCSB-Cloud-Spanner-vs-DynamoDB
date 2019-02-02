@@ -127,7 +127,7 @@ Run a Workload
 --------------------
   1. DynamoDB service :
   ```
-               bin/ycsb run dynamodb -P workloads/workloadb1 -p recordcount=5000000 -P ./dynamodb/conf/dynamodb.properties -threads 10 -s  
+               bin/ycsb run dynamodb -P workloads/workloadb1 -p recordcount=5000000 -P ./dynamodb/conf/dynamodb.properties -threads 10 -s  >>~/Dynamodb/5M/workloadb1-1.csv
   ``` 
            
   2. CloudSpanner service :
