@@ -134,6 +134,13 @@ Run a Workload
   ```
               bin/ycsb run cloudspanner -P cloudspanner/conf/cloudspanner.properties -P workloads/workloadb1 -p recordcount=5000000 -p operationcount=10000 -threads 10 -s >>~/Spanner/5M/workloadb1-1.csv
   ```
+  Cleaning the Results
+  --------------------
+   We partially cleaned the data using a small python script that can be found under the CSV DATA Cleaner Folder. 
+   This gave us the needed data to manipulate and use for plotting which we did manually.
+   
+
+  
 Additional Links:
 -------------------------------
   The official YCSB wiki has lot of informative material on running workloads and different parameters available.
