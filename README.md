@@ -143,5 +143,7 @@ Additional Links:
 
   See [Core properties](https://github.com/brianfrankcooper/YCSB/wiki/Core-Properties) for
   the list of available workload properties.
+  
+  See [Our Final Results] (https://docs.google.com/spreadsheets/d/12-ISH6kODJACDOYZ3dP1jRw9iFUIUC7E5NCHO6OmEms/edit?usp=sharing) for the analysis of the final results of executing the benchmarking.
 
 
